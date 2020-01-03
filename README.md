@@ -1,2 +1,2 @@
-# Algorithmic Delta Hedging
- A library to price and visualize european options
+# Algorithmic_Delta_Hedging
+ A library for pricing, and visualizing european options for hedging a portfolio
