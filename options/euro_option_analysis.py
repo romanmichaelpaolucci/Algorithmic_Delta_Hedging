@@ -6,12 +6,7 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 from scipy import stats
 
-
-class EuropeanOption:
-    pass
-
-
-class EuropeanCall(EuropeanOption):
+class EuropeanCall:
 
     def d1(self, asset_price, strike_price, risk_free_rate, volatility, dt):
         return (math.log((asset_price/strike_price)) + (risk_free_rate + math.pow(volatility,2)/2)*dt)/(volatility*math.sqrt(dt))
@@ -51,7 +46,7 @@ class EuropeanCall(EuropeanOption):
         self.delta = self.delta(d1)
 
 
-class EuropeanPut(EuropeanOption):
+class EuropeanPut:
 
     def d1(self, asset_price, strike_price, risk_free_rate, volatility, dt):
         return (math.log((asset_price/strike_price)) + (risk_free_rate + math.pow(volatility,2)/2)*dt)/(volatility*math.sqrt(dt))
